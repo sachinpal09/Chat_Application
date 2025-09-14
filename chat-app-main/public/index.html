@@ -19,7 +19,9 @@
     const messagesDiv = document.getElementById('messages');
     const messageInput = document.getElementById('messageInput');
     const sendButton = document.getElementById('sendButton');
-    const ws = new WebSocket('ws://localhost:3000');
+    // const ws = new WebSocket('ws://localhost:3000');
+    const ws = new WebSocket("wss://chat-application-ewm7.onrender.com");
+
   
     ws.addEventListener('message', (event) => {
       const message = event.data;
