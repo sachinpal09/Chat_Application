@@ -1,4 +1,4 @@
- /* Chat bubble styling */
+/* Chat bubble styling
  .chat-container {
   display: flex;
   flex-direction: column;
@@ -70,4 +70,96 @@
 
 #sendButton:active {
   background-color: #3b9aff;
+} */
+ /* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 400px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Messages area */
+.messages-container {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Each message bubble */
+.message-container {
+  display: flex;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: #e4e6eb;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sent messages (align right) */
+.sender-message-container {
+  justify-content: flex-end;
+}
+
+.sender-message-bubble {
+  background: #667eea;
+  color: #fff;
+}
+
+/* Input area */
+.message-input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.message-input-container input {
+  flex: 1;
+  border: none;
+  padding: 12px 15px;
+  font-size: 14px;
+  border-radius: 30px;
+  outline: none;
+  background: #f0f2f5;
+  margin-right: 10px;
+}
+
+.message-input-container button {
+  background: #667eea;
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.message-input-container button:hover {
+  background: #5563c1;
 }
